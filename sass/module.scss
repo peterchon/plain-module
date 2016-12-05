@@ -1,0 +1,33 @@
+@import "compass/css3";
+
+html,
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.module-container {
+  max-width: 768px;
+  margin: auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.module {
+  margin: 20px 0;
+  padding: 50px;
+  border: 1px solid #ccc;
+
+  animation-name: fade-in;
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
