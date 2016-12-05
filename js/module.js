@@ -6,7 +6,7 @@ var globFn = (function myFn(doc) {
 
     /* initial options to declare */
     var initOpt = {
-        jsUrl: "js/partial/"
+        jsUrl: "js/_partial/"
     };
 
     /* plain JS ajax - can pass resolve and reject for promise */
@@ -88,7 +88,7 @@ document.body.onclick = function(Event) {
         Event.stopPropagation();
 
         /* setup the url to get */
-        var url = "partial/" + _module + ".html";
+        var url = "_partial/" + _module + ".html";
 
         /* append the script to head */
         globFn.appendScriptToHead(_module);
